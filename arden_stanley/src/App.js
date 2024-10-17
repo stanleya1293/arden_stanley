@@ -1,22 +1,26 @@
 import './App.css';
-import {Routes, Route} from "react-router-dom"
+import {Routes, Route, BrowserRouter, Link, Outlet} from "react-router-dom"
 
 function App() {
   return (
-    <Routes>
-      <Route path="/">
-        <Route index component={<Home/>} />
-        
-      </Route>
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/">
+          <Route index element={<Home/>} />
+          <Route path="about" element={<About/>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 function Home() {
-  <div className="Home">
-    <Name/>
-    <Content/>
-  </div>
+  return(
+    <div className="Home">
+      <Name/>
+      <Content/>
+    </div>
+  );
 }
 
 function Name() {
@@ -33,14 +37,14 @@ function Content() {
   return (
     <div className="Content">
       
-      <Item 
+      <Item
       itemTitle="About"
       itemText="Greetings! My name is Arden Stanley. Ever since a kid, 
       I have had a passion for all that is engineering, 
       computer science, mathematics, physics, you name it.  I am currently 
       in undergrad pursuing a degree in Computer Engineering at the University of Tennessee at Chattanooga.  To learn more about me,
-      click here."
-      />
+      click ">
+      </Item>
 
       <Item 
       itemTitle="Projects"
@@ -54,15 +58,19 @@ function Content() {
   );
 }
 
-function handleMouseHover() {
-
-}
-
 function Item({itemTitle, itemText}) {
   return (
-    <div className="Item" onMouseEnter={handleMouseHover}>
+    <div className="Item">
       <h2 className="ItemTitle">{itemTitle}</h2>
       <p className="ItemText">{itemText}</p>
+    </div>
+  );
+}
+
+function About() {
+  return (
+    <div className="Home">
+      
     </div>
   );
 }

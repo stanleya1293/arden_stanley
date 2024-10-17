@@ -60,6 +60,18 @@
   padding: 30px;
 }
 
+@keyframes itemHover {
+  from {width: 30vw; height: 60vh; border-image: linear-gradient(in hsl, rgb(77, 0, 128) 0%, navy 100%) 1}
+  to {width: 31vw; height: 61vh; border-image: linear-gradient(in hsl, navy 0%, rgb(77, 0, 128) 100%) 1}
+}
+
+.Item:hover {
+  animation: itemHover 0.4s;
+  width: 31vw; 
+  height: 61vh; 
+  border-image: linear-gradient(in hsl, navy 0%, rgb(77, 0, 128) 100%) 1
+}
+
 .ItemText {
   font-family: terminalText;
   font-size: 1.7rem;
