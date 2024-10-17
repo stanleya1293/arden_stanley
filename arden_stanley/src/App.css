@@ -1,0 +1,74 @@
+.Home {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@font-face {
+  font-family: terminalTitleText;
+  src: url(./Assets/ChakraPetch-Bold.ttf);
+}
+
+@font-face {
+  font-family: terminalText;
+  src: url(./Assets/ChakraPetch-Regular.ttf)
+}
+
+.TitleBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 30vh;
+}
+
+.NameContainer {
+  height: 20vh;
+  width: 97vw;
+  background-color: black;
+  border: 0.2rem solid;
+  border-image: linear-gradient(45deg, rgb(77, 0, 128) 0%, navy 100%) 1;
+  text-align: center;
+}
+
+.Name {
+  color: rgb(255, 255, 255);
+  font-family: terminalTitleText;
+  font-size: 5rem;
+}
+
+.Content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 70vh;
+}
+
+.Item {
+  width: 30vw;
+  height: 60vh;
+  background-color: black;
+  border: 0.2rem solid;
+  border-image: linear-gradient(in hsl, rgb(77, 0, 128) 0%, navy 100%) 1;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.ItemText {
+  font-family: terminalText;
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+}
+
+.ItemTitle {
+  font-family: terminalTitleText;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+}
+
