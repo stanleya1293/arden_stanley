@@ -17,6 +17,39 @@
   align-items: center;
 }
 
+.Projects {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: rgb(77, 0, 128) black;
+}
+
+.Project {
+  height: 40vh;
+  width: 85vw;
+  border: 0.2rem solid rgb(77, 0, 128);
+  margin-top: 3%;
+  display: block;
+  margin-left: 7.5vw;
+  margin-right: 7.5vw;
+  border-radius: 0;
+  transition: 0.3s;
+}
+
+.Project:hover {
+  width: 90vw; 
+  height: 41vh; 
+  margin-left: 5vw;
+  margin-right: 5vw;
+  border-image: none;
+  border-color: navy;
+  border-radius: 50px;
+  transition: 0.3s;
+
+}
+
 @font-face {
   font-family: terminalTitleText;
   src: url(./Assets/ChakraPetch-Bold.ttf);
@@ -140,5 +173,76 @@
   color: white;
   font-family: terminalTitleText;
   text-align: center;
-  margin-top: 60%;
+  margin-top: 50%;
+}
+
+.LearnMore {
+  font-family: terminalTitleText;
+  background-color: black;
+  border: 0.2rem black solid;
+  width: 40%;
+  height: 10%;
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: white;
+  border-radius: 50px;
+  transition: 0.5s;
+  font-size: 1.2rem;
+}
+
+.LearnMore:hover {
+  background-color: transparent;
+  color: black;
+  transition: 0.5s;
+}
+
+@keyframes TextContainerEntry {
+  from {width: 0vw;}
+  to {width: 60vw;}
+}
+
+@keyframes FadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.AboutTextContainer {
+  animation: TextContainerEntry 0.5s;
+  background-color: black;
+  width: 60vw;
+  height: 80vh;
+  border: 0.2rem solid;
+  border-image: linear-gradient(in hsl, navy 0%, rgb(77, 0, 128) 100%) 1;
+  text-align: center;
+}
+
+.AboutText {
+  opacity: 0;
+  animation: FadeIn 2s 0.5s forwards;
+  color: white;
+  margin: 5%;
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+
+.BackHome {
+  font-family: terminalTitleText;
+  border: 0.2rem solid rgb(77, 0, 128);
+  background-color: black;
+  border-radius: 50px;
+  width: 40%;
+  height: 10%;
+  color: white;
+  transition: 0.5s;
+  font-size: 1.2rem;
+  transition: 0.4s;
+}
+
+.BackHome:hover {
+  border-color: navy;
+  border-style: dotted;
+  width: 42%;
+  height: 10%;
+  transition: 0.4s;
 }
