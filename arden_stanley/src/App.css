@@ -36,51 +36,62 @@
 }
 
 .Name {
-  color: rgb(255, 255, 255);
+  color: rgb(77, 0, 128);
   font-family: terminalTitleText;
   font-size: 5rem;
+  text-shadow: navy 3px 3px
 }
 
 .Content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   width: 100vw;
   height: 70vh;
+}
+
+.ItemContainer {
+  width: 33vw;
+  height: 70vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .Item {
   width: 30vw;
   height: 60vh;
-  background-color: black;
   border: 0.2rem solid;
   border-image: linear-gradient(in hsl, rgb(77, 0, 128) 0%, navy 100%) 1;
   text-align: center;
   box-sizing: border-box;
   padding: 30px;
-}
-
-@keyframes itemHover {
-  from {width: 30vw; height: 60vh; border-image: linear-gradient(in hsl, rgb(77, 0, 128) 0%, navy 100%) 1}
-  to {width: 31vw; height: 61vh; border-image: linear-gradient(in hsl, navy 0%, rgb(77, 0, 128) 100%) 1}
+  font-size: 1.7rem;
+  background-color: black;
+  transition: border-image 0.5s, width 0.5s, height 0.5s, color 0.5s, font-size 0.5s;
 }
 
 .Item:hover {
-  animation: itemHover 0.4s;
-  width: 31vw; 
-  height: 61vh; 
-  border-image: linear-gradient(in hsl, navy 0%, rgb(77, 0, 128) 100%) 1
+  width: 32vw; 
+  height: 68vh; 
+  color: rgb(77, 0, 128);
+  border-image: linear-gradient(in hsl, navy 0%, rgb(77, 0, 128) 100%) 1;
+  transition: border-image 0.5s, width 0.5s, height 0.5s, color 0.5s;
+  margin: 0px;
 }
+
 
 .ItemText {
   font-family: terminalText;
   font-size: 1.7rem;
-  color: rgb(255, 255, 255);
 }
 
 .ItemTitle {
   font-family: terminalTitleText;
-  font-size: 2.5rem;
-  color: rgb(255, 255, 255);
+  background-clip: text;
+  background-image: linear-gradient(in hsl, navy 0%, rgb(77, 0, 128) 100%);
+  color: navy;
+  transition: color 0.5s;
 }
 
+.Item:hover .ItemTitle {
+  color: transparent;
+  transition: color 0.5s;
+}

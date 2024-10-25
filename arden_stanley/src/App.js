@@ -36,33 +36,22 @@ function Name() {
 function Content() {
   return (
     <div className="Content">
-      
-      <Item
-      itemTitle="About"
-      itemText="Greetings! My name is Arden Stanley. Ever since a kid, 
-      I have had a passion for all that is engineering, 
-      computer science, mathematics, physics, you name it.  I am currently 
-      in undergrad pursuing a degree in Computer Engineering at the University of Tennessee at Chattanooga.  To learn more about me,
-      click ">
-      </Item>
-
-      <Item 
-      itemTitle="Projects"
-      itemText="Over the years, I have tinkered with electronics and created
-      many small programs.  However, as of recent times,
-      I have begun work on some much larger scale solo projects.
-      To view these projects and my progress on them, click here."
-      />
-      <Item itemTitle="Resume and Other Links"/>
+      <Item title="About" to="/about"></Item>
+      <Item title="Projects" to="/projects"></Item>
+      <Item title="Useful Links" to="/links"></Item>
+      <Outlet/>
     </div>
   );
 }
 
-function Item({itemTitle, itemText}) {
+function Item({title, to}) {
   return (
-    <div className="Item">
-      <h2 className="ItemTitle">{itemTitle}</h2>
-      <p className="ItemText">{itemText}</p>
+    <div className="ItemContainer">
+      <Link to={to}>
+        <button className="Item">
+          <h1 className="ItemTitle">{title}</h1>
+        </button>
+      </Link>
     </div>
   );
 }
