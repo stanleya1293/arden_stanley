@@ -8,6 +8,15 @@
   align-items: center;
 }
 
+.About {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 @font-face {
   font-family: terminalTitleText;
   src: url(./Assets/ChakraPetch-Bold.ttf);
@@ -94,4 +103,42 @@
 .Item:hover .ItemTitle {
   color: transparent;
   transition: color 0.5s;
+}
+
+.ImageContainer {
+  width: 30vw;
+  height: 80vh;
+  border: 0.4rem solid;
+  border-image: linear-gradient(in hsl, rgb(77, 0, 128) 0%, navy 100%) 1;
+  position: relative;
+}
+
+#SelfPortrait {
+  width: 100%;
+  height: 100%;
+}
+
+.Overlay {
+  width: 100%;
+  height: 0%;
+  background-image: linear-gradient(in hsl, rgb(77, 0, 128) 0%, navy 100%);
+  position: absolute;
+  overflow: hidden;
+  bottom: 100%;
+  left: 0;
+  transition: 0.5s;
+  align-items: center;
+}
+
+.ImageContainer:hover .Overlay {
+  height: 100%;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.ImageText {
+  color: white;
+  font-family: terminalTitleText;
+  text-align: center;
+  margin-top: 60%;
 }
