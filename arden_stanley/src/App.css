@@ -36,6 +36,7 @@
   margin-right: 7.5vw;
   border-radius: 0;
   transition: 0.3s;
+  text-align: center;
 }
 
 .Project:hover {
@@ -48,6 +49,19 @@
   border-radius: 50px;
   transition: 0.3s;
 
+}
+
+.ProjectTitle {
+  font-size: 1.7rem;
+  color: rgb(255, 255, 255);
+  font-family: terminalTitleText;
+  margin-top: 2%;
+  transition: color 0.5s;
+}
+
+.Project:hover .ProjectTitle {
+  color: navy;
+  transition: color 0.5s;
 }
 
 @font-face {
