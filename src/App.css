@@ -64,6 +64,13 @@
   transition: color 0.5s;
 }
 
+.ProjectInfo {
+  font-size: 1.5rem;
+  color: white;
+  font-family: terminalText;
+  margin: 2%;
+}
+
 @font-face {
   font-family: terminalTitleText;
   src: url(./Assets/ChakraPetch-Bold.ttf);

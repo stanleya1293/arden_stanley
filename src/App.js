@@ -84,6 +84,12 @@ function Projects() {
         </p>
       </div>
       <div className="Project">
+        <h1 className="ProjectTitle">Snake C/OpenGL</h1>
+        <p className="ProjectInfo">
+          
+        </p>
+      </div>
+      <div className="Project">
         <h1 className="ProjectTitle">Conjure 2D Game Engine (in progress)</h1>
         <p className="ProjectInfo">
           Being a fan of systems level programming and computer graphics theory, 
@@ -99,9 +105,6 @@ function Projects() {
           in order to maximize efficiency and not get lost in the sea of inheritance.
 
         </p>
-      </div>
-      <div className="Project">
-        
       </div>
     </div>
   );
