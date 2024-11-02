@@ -65,10 +65,10 @@
 }
 
 .ProjectInfo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: white;
   font-family: terminalText;
-  margin: 2%;
+  margin: 5%;
 }
 
 @font-face {
