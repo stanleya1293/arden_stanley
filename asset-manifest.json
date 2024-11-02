@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0259186f.css",
+    "main.js": "/static/js/main.8640f874.js",
+    "static/js/453.fb611f62.chunk.js": "/static/js/453.fb611f62.chunk.js",
+    "static/media/ChakraPetch-Regular.ttf": "/static/media/ChakraPetch-Regular.f4019d33aae25f6d8eaf.ttf",
+    "static/media/ChakraPetch-Bold.ttf": "/static/media/ChakraPetch-Bold.ac19a2618ff468c4d7a2.ttf",
+    "index.html": "/index.html",
+    "main.0259186f.css.map": "/static/css/main.0259186f.css.map",
+    "main.8640f874.js.map": "/static/js/main.8640f874.js.map",
+    "453.fb611f62.chunk.js.map": "/static/js/453.fb611f62.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0259186f.css",
+    "static/js/main.8640f874.js"
+  ]
+}
